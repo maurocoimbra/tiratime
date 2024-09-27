@@ -1,0 +1,22 @@
+.outer-container {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inner-container {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+
+.jogadores {
+  height: 500px;
+}
+
+.button {
+  width: 80px;
+  height: 50px;
+  align-self: center;
+}
