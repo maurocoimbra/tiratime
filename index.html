@@ -4,49 +4,25 @@
   <head>
     <meta charset="UTF-8">
     <title>TiraTime</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
-    <h1>Tiratime</h1>
+    <h1 class="tiratime">TiraTime.com</h1>
     <hr/>
-    <div class="outer-container">
-      <div class="inner-container">
-        <textarea class="jogadores in" placeholder="Insira os jogadores da pelada">Pelada TERÇA 
-Local bougan
-Horário: 19h
-Fabiao: danado
+    <div class="flex-container">
+      <textarea id="players-raw" class="jogadores" placeholder="Copie a lista do WhatsApp"></textarea>
+      <input id="convert-list" type="submit" class="button" value="Converter"/>
 
-1- Peu
-2- Kelson
-3- heitor 
-4- Carlinhos 
-5- tins
-6- virgílio
-7- nando
-8- hermano 
-9- beto
-10- ian
-11- paiva
-12- Decio 
-13- nícolas
-14- micael 
-15- Rafael
-16- JV
+      <textarea id="players-list" class="jogadores" placeholder="Jogadores da pelada"></textarea>
+      <input id="create-teams" type="submit" class="button" value="Criar times"/>
 
-Lista de espera 
-1- Gabriel 
-2- Leo Heim
-3- 
-
-Goleiros
-1- Batoré 
-2- maleto</textarea>
-        <input type="submit" class="button"/>
-      </div>
-      <div class="inner-container">
-        <textarea class="jogadores out"></textarea>
-      </div>
+      <textarea id="teams" class="jogadores" placeholder="Times"></textarea>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
